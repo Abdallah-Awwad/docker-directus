@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Store</title>
+    <link rel="shortcut icon" href="imgs/drugs.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        <section class="first-section">
+            <nav class="navbar navbar-expand fixed-top navbar-light">
+                <div class="container">
+                    <a class="brand" href="index.html">
+                        <img src="imgs/drugs.png" alt="" width="30px">
+                        <span class="main-color">med</span><span class="red-color">ic</span><span class="orange-color">ine</span>
+                    </a>
+                    <form class="d-flex">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-3 rounded-4">
+                                <a class="nav-link" href="medicines.html">Medicines</a>
+                            </li>
+                            <li class="nav-item me-3 rounded-4">
+                                <a class="nav-link" href="#">Delivery</a>
+                            </li>
+                            <li class="nav-item me-3 rounded-4">
+                                <a class="nav-link" href="#">Our services</a>
+                            </li>
+                            <li class="nav-item me-3 rounded-4">
+                                <a class="nav-link" href="login.html" id="log">Login</a>
+                            </li>
+                            <a class="button btn btn-outline-success pe-3 px-3" href="mycart.html"><i class="fa-solid fa-cart-shopping me-1"></i> Cart</a>
+                        </ul>
+                    </form>
+                </div>
+            </nav>
+            <div class="featuring container mt-5">
+                <div class="row mb-5 pb-5 pt-4">
+                    <div class="col-6 mt-5">
+                        <h1 class="w-75 pb-5">Reliable on time home deleviery</h1>
+                        <p class="w-75">Our in-house pharmacist ensure your medicnes reach you when you need them.</p>
+                        <div class="stats pt-5">
+                            <div class="button btn btn-outline-success px-3"><span>100%</span> <br> Delivery success</div>
+                            <div class="button orange btn btn-outline-success px-3 mx-3"><span>5.0</span> (67k) <br> Customers reviews</div>
+                        </div>
+                    </div>
+                    <div class="background-right col-6 position-relative">
+                        <div class="circles circle-1 translate-middle"></div>
+                        <div class="circles circle-2 translate-middle"></div>
+                        <div class="circles circle-3 translate-middle"></div>
+                        <img class="delivery-guy translate-middle" src="imgs/Delivery-man-handing-box.png" alt="Smiley delivery man handing box" width="50%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="most-recent">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h2>Most Recent Products</h2>
+                    </div>
+                    <div class="col-12">
+                        <div id="carousel1" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" id="most-recent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="order-now">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md card mx-2 border-0 rounded-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3 class="card-title">Chat with a doctor</h3>
+                                    <p class="card-text">Don't self medicate. Talk to an expert. Consult a doctor in less than 2 minutes.</p>
+                                    <a class="button btn btn-outline-success px-3" href="#">Get started</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="m-4 rounded-4 image-background text-center">
+                                    <img src="imgs/doctor-texting.png" alt="Doctor texting">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md card mx-2 border-0 rounded-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3 class="card-title">Home delivery in 30 minutes</h3>
+                                    <p class="card-text">Tired of waiting in a queue? Too weak to go down and buy medicines?</p>
+                                    <a class="button btn btn-outline-success px-3" href="medicines.html">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="m-4 rounded-4 image-background text-center">
+                                    <img src="imgs/Crossed-armed man.png" alt="Smiling deleviery guy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="browse-medicines">
+            <div class="col-12 text-center pt-4">
+                <h2>Browse medicines & health products</h2>
+            </div>
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="categories align-items-center p-3 justify-content-center">
+                        <button type="button" class="btn category-button mx-1 button btn-outline-success" data-category="all">All</button>
+                        <button type="button" class="btn category-button mx-1" data-category="Fitness"><i class="fa-solid fa-dumbbell me-1"></i> Fitness</button>
+                        <button type="button" class="btn category-button mx-1" data-category="Devices"><i class="fa-solid fa-stethoscope me-1"></i> Devices</button>
+                        <button type="button" class="btn category-button mx-1" data-category="Pain Relief"><i class="fa-solid fa-pills me-1"></i> Pain Relief</button>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="card-grid">
+                </div>
+                <div class="col text-center">
+                    <a class="button btn btn-outline-success align-self-center mt-2" href="medicines.html">See More</a>
+                </div> 
+            </div>
+        </section>
+        <section class="customer-reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h2>Customer review & recommendation</h2>
+                    </div>
+                    <div id="reviews" class="reviews-container carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+                        <div class="reviews carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review d-flex justify-content-between align-items-center">
+                                    <div class="image col-4 text-center">
+                                        <img src="imgs/review-1.png" class="rounded-4" alt="Review sender image">
+                                    </div>
+                                    <div class="text col-7">
+                                        <span><i class="fa-solid fa-quote-left"></i></span>
+                                        <p class="review-message mt-3 fw-semibold"> Beautiful application with elegant UI design. I found this website very useful. Placed order for a few medicines and recived in just 30 minutes. Same medicine costs me +100 from local shop. Recomended this website and mobile application 😍.</p>
+                                        <p class="review-sender"> Darlene Robertson - <span class="fw-lighter">Medical Assistant</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review d-flex justify-content-between align-items-center">
+                                    <div class="image col-4 text-center">
+                                        <img src="imgs/review-2.jpg" class="rounded-4" alt="Review sender image">
+                                    </div>
+                                    <div class="text col-7">
+                                        <span><i class="fa-solid fa-quote-left"></i></span>
+                                        <p class="review-message mt-3 fw-semibold">As a busy mom, I appreciate this app's convenience. The UI is appealing and user-friendly. Ordered baby essentials, got them promptly. Unbeatable prices saved me time and money. Highly recommended! 👶</p>
+                                        <p class="review-sender"> Emily Davis - <span class="fw-lighter">Stay-at-home Mom</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review d-flex justify-content-between align-items-center">
+                                    <div class="image col-4 text-center">
+                                        <img src="imgs/review-3.jpg" class="rounded-4" alt="Review sender image">
+                                    </div>
+                                    <div class="text col-7">
+                                        <span><i class="fa-solid fa-quote-left"></i></span>
+                                        <p class="review-message mt-3 fw-semibold">Impressed by this site's functionality and professionalism. Elegant UI provides seamless experience. Prices significantly lower than local pharmacies. Highly recommend for reliable healthcare solutions. Exceptional service! 😊</p>
+                                        <p class="review-sender"> Jonathan Anderson - <span class="fw-lighter">Software Engineer</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#reviews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#reviews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#reviews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container d-flex flex-wrap align-items-center justify-content-between align-items-center pb-1 px-0">
+            <div class="col-md-4 d-flex my-2">
+                <a href="index.html" class="brand mb-3 me-2 mb-md-0 lh-1">
+                    <img src="imgs/drugs.png" alt="" width="30px">
+                    <span class="main-color">med</span><span class="red-color">ic</span><span class="orange-color">ine</span>
+                </a>
+            </div>
+            <ul class="nav col-md-8 justify-content-end my-2">
+                <li class="effect p-2 me-3 rounded-4"><a href="medicines.html"></i>Medicines</a></li>
+                <li class="effect p-2 me-3 rounded-4"><a href="#"></i>Delivery</a></li>
+                <li class="effect p-2 me-3 rounded-4"><a href="#"></i>Our services</a></li>
+                <li class="effect p-2 rounded-4"><a href="#"></i>Contact</a></li>
+            </ul>
+            <div class="col-md-4">
+                <span>&copy; copyright @2023 medicine</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end">
+                <li>Find us on:</li>
+                <li class="ms-3">
+                    <a href="#">
+                        <i class="facebook fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="#">
+                        <i class="linkedin fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="#">
+                        <i class="skype fa-brands fa-skype"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="#">
+                        <i class="whatsapp fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
+<script type='text/javascript' src='js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src='js/jquery-3.5.1.min.js'></script>
+<script type='text/javascript' src='js/script.js'></script>
+<script>
+    $(document).ready(async function() {
+        try {
+            let inventory = (await ajaxRequest({}, inventoryRequest + "&sort=-medicine_id.id&limit=8", "GET"))["data"];
+            let counter = 0;
+            let item = "";
+            let firstCarousel = '<div class="carousel-item active">' + 
+                                    '<div class="row">';
+            let secondCarousel = '<div class="carousel-item">' + 
+                                    '<div class="row">';                                        
+            let closingCarousel = '</div> </div>';
+            let carouselButtons = '<div class="col-12 text-center">' +
+                                        '<a class="button btn btn-outline-success mb-3 me-1" href="#carousel1" role="button" data-bs-slide="prev">' +
+                                            '<i class="fa-solid fa-arrow-left"></i>' + 
+                                        '</a>' +
+                                        '<a class="button btn btn-outline-success mb-3" href="#carousel1" role="button" data-bs-slide="next">' +
+                                            '<i class="fa-solid fa-arrow-right"></i>' +
+                                        '</a>' +
+                                    '</div>';
+            $.each(inventory, function(key, value) {
+                if (value['quantity'] <= 0) {
+                    return;
+                }
+                if (counter == 0) {
+                    item += firstCarousel;
+                }
+                item += `<div class="col-md-3 mb-3">` + 
+                            `<div class="product-image text-center position-relative rounded-4">` +
+                                `<div class="image-wrapper align-items-center justify-content-center text-center">` + 
+                                    `<img class="img-fluid align-self-center" alt="100%x280" src="${domainURL}assets/${value['medicine_id']['image']}">` +
+                                `</div>` + 
+                                `<button type="button" onclick="addToCart(this)" class="d-flex justify-content-end">` +
+                                    `<i class="fa-solid fa-plus"></i>` +
+                                `</button>` +
+                            `</div>` +
+                            `<div class="product-details card-body" data-id="${value['id']}" data-available-quantity="${value['quantity']}">` +
+                                `<div class="product-name">${value['medicine_id']['name']}</div>` +
+                                `<h5 class="product-price">$<span>${value["selling_price"]}</span></h5>` +
+                            `</div>` +
+                        `</div>`;
+                if (counter == 3) {
+                    item += closingCarousel + secondCarousel;
+                }
+                counter++;
+            });
+            item += closingCarousel;
+            $("#most-recent").append(item);
+            $(".most-recent").append(carouselButtons);
+        } catch (error) {
+            $("#most-recent").append(`<div class="col text-muted"> Something wrong happened while loading the products, please try again later.</div>`);
+        }
+        try {
+            let inventory = (await ajaxRequest({}, inventoryRequest, "GET"))["data"];
+            $.each(inventory, function(key, value) {
+                if (value['quantity'] <= 0) {
+                    return;
+                }
+                // expiration_date = value["expiration_date"];
+                // type            = value["medicine_id"]["type"];
+                // unit            = value["medicine_id"]["unit"];
+                // manufacturer    = value["medicine_id"]["manufacturer"]["name"];
+                item = `<div class="filter col mb-3" data-category="${value['medicine_id']["category"]}">` +
+                            `<div class="product-image text-center position-relative rounded-4">` + 
+                                `<div class="image-wrapper align-items-center justify-content-center text-center">` + 
+                                    `<img class="img-fluid" alt="100%x280" src="${domainURL}assets/${value['medicine_id']['image']}">` +
+                                `</div>` + 
+                                `<button type="button" onclick="addToCart(this)" class="d-flex justify-content-end">` + 
+                                    `<i class="fa-solid fa-plus"></i>` + 
+                                `</button>` + 
+                            `</div>` + 
+                            `<div class="product-details card-body text-center" data-id="${value['id']}" data-available-quantity="${value['quantity']}">` + 
+                                `<div class="product-name"> ${value['medicine_id']["name"]}</div>` + 
+                                `<h5 class="product-price">$<span>${value["selling_price"]}</span></h5>` + 
+                            `</div>` + 
+                        `</div>`;
+                $("#card-grid").append(item);
+            });
+        } catch (error) {
+            $("#card-grid").append(`<div class="w-100 text-muted mb-5"> Something wrong happened while loading the products, please try again later.</div>`);
+        }
+    });
+</script>
